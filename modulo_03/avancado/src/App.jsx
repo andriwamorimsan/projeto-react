@@ -3,7 +3,9 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import City from "./assets/melmel.jpg";
-import './components/cemporcento.css'
+import './assets/cemporcento.css'
+import ManageData from "./components/ManageData.jsx";
+import ListRender from "./components/ListRender.jsx";
 
 function App() {
   const [count, setCount] = useState(0)
@@ -21,6 +23,10 @@ function App() {
            <div>
                <img src={City} className={"cem"}   alt=""/>
            </div>
+
+           <ManageData/>
+
+           <ListRender/>
        </div>
     </>
   )
